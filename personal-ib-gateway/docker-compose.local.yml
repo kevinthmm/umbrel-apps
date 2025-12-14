@@ -1,0 +1,10 @@
+# Local-only override to test without Umbrel. This stubs app_proxy and
+# exposes port 8080 directly.
+services:
+  app_proxy:
+    image: alpine:3.19
+    command: ["sleep", "infinity"]
+
+  ibgateway:
+    ports:
+      - "8080:8080"  # direct noVNC access when testing locally

@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: "personal-ib-gateway"
+name: "IB Gateway"
+tagline: Headless IB Gateway with web VNC access
+icon: https://datawookie.gitlab.io/ib-gateway/interactive-brokers-logo.png
+data:
+  storage: /data
+category: finance
+version: "0.1.0"
+port: 8080
+description: >-
+  Interactive Brokers IB Gateway packaged for Umbrel with a built-in noVNC web UI. 
+  The Java login window is rendered through a virtual X server, x11vnc, and noVNC so you can sign in from your browser.
+  API ports 4001/4002 are exposed for live/paper TWS API connectivity. Requires x86 emulation (qemu) on Raspberry Pi.
+
+developer: Interactive Brokers (packaged for Umbrel)
+website: https://www.interactivebrokers.com
+repo: https://www.interactivebrokers.com/en/trading/ibgateway-latest.php
+support: https://www.interactivebrokers.com/campus/ibkr-api-page/twsapi-doc/#api-introduction
+gallery:
+  - https://www.interactivebrokers.com/campus/wp-content/uploads/sites/2/2022/07/gateway-login-andrew-collier.png
+releaseNotes: >-
+  Initial packaging with noVNC front-end.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: Kevin Thom
+submission: https://github.com/kevinthmm/umbrel-personal-app-store
